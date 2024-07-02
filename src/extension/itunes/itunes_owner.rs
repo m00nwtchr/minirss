@@ -15,6 +15,7 @@ use crate::toxml::{ToXml, WriterExt};
 
 /// The contact information for the owner of an iTunes podcast.
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
+#[cfg_attr(feature = "miniserde", derive(miniserde::Serialize, miniserde::Deserialize))]
 #[derive(Debug, Default, Clone, PartialEq)]
 #[cfg_attr(feature = "builders", derive(Builder))]
 #[cfg_attr(

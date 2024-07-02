@@ -19,6 +19,7 @@ use crate::util::{attr_value, decode, element_text};
 
 /// Represents the source of an RSS item.
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
+#[cfg_attr(feature = "miniserde", derive(miniserde::Serialize, miniserde::Deserialize))]
 #[derive(Debug, Default, Clone, PartialEq)]
 #[cfg_attr(feature = "builders", derive(Builder))]
 #[cfg_attr(

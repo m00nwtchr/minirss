@@ -21,6 +21,7 @@ pub const NAMESPACE: &str = "http://www.w3.org/2005/Atom";
 
 /// An Atom element extension.
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
+#[cfg_attr(feature = "miniserde", derive(miniserde::Serialize, miniserde::Deserialize))]
 #[derive(Default, Debug, Clone, PartialEq)]
 #[cfg_attr(feature = "builders", derive(Builder))]
 #[cfg_attr(
